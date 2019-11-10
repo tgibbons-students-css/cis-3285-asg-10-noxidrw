@@ -22,6 +22,7 @@ namespace CurrencyTrader.AdoNet
         {
             //throw new NotImplementedException();
             logger.LogInfo("Starting Synchronus trade Storage");
+            // SynchTradeStorage.Persist(trades);
             Task.Run(() => SynchTradeStorage.Persist(trades));
         }
     }
